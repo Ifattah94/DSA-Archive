@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		81E7E63E1FE02C3E00F4CFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E63D1FE02C3E00F4CFA3 /* AppDelegate.swift */; };
-		81E7E6401FE02C3E00F4CFA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E63F1FE02C3E00F4CFA3 /* ViewController.swift */; };
+		81E7E6401FE02C3E00F4CFA3 /* DSAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E63F1FE02C3E00F4CFA3 /* DSAListViewController.swift */; };
 		81E7E6431FE02C3E00F4CFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E7E6411FE02C3E00F4CFA3 /* Main.storyboard */; };
 		81E7E6451FE02C3E00F4CFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E7E6441FE02C3E00F4CFA3 /* Assets.xcassets */; };
 		81E7E6481FE02C3E00F4CFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E7E6461FE02C3E00F4CFA3 /* LaunchScreen.storyboard */; };
 		81E7E6531FE02C3E00F4CFA3 /* DSA_NSKeyedArchiverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E6521FE02C3E00F4CFA3 /* DSA_NSKeyedArchiverTests.swift */; };
 		81E7E65E1FE02C3E00F4CFA3 /* DSA_NSKeyedArchiverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E65D1FE02C3E00F4CFA3 /* DSA_NSKeyedArchiverUITests.swift */; };
+		81E7E66C1FE0302400F4CFA3 /* EditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E66B1FE0302400F4CFA3 /* EditListViewController.swift */; };
+		81E7E66E1FE036F800F4CFA3 /* DSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E66D1FE036F800F4CFA3 /* DSA.swift */; };
+		81E7E6701FE03CD600F4CFA3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7E66F1FE03CD600F4CFA3 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		81E7E63A1FE02C3E00F4CFA3 /* DSA NSKeyedArchiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSA NSKeyedArchiver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E7E63D1FE02C3E00F4CFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81E7E63F1FE02C3E00F4CFA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81E7E63F1FE02C3E00F4CFA3 /* DSAListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAListViewController.swift; sourceTree = "<group>"; };
 		81E7E6421FE02C3E00F4CFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81E7E6441FE02C3E00F4CFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E7E6471FE02C3E00F4CFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		81E7E6591FE02C3E00F4CFA3 /* DSA NSKeyedArchiverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSA NSKeyedArchiverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E7E65D1FE02C3E00F4CFA3 /* DSA_NSKeyedArchiverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSA_NSKeyedArchiverUITests.swift; sourceTree = "<group>"; };
 		81E7E65F1FE02C3E00F4CFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E7E66B1FE0302400F4CFA3 /* EditListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListViewController.swift; sourceTree = "<group>"; };
+		81E7E66D1FE036F800F4CFA3 /* DSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSA.swift; sourceTree = "<group>"; };
+		81E7E66F1FE03CD600F4CFA3 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +103,10 @@
 		81E7E63C1FE02C3E00F4CFA3 /* DSA NSKeyedArchiver */ = {
 			isa = PBXGroup;
 			children = (
-				81E7E63D1FE02C3E00F4CFA3 /* AppDelegate.swift */,
-				81E7E63F1FE02C3E00F4CFA3 /* ViewController.swift */,
+				81E7E6731FE0462400F4CFA3 /* supporting files */,
+				81E7E6711FE045F500F4CFA3 /* viewControllers */,
+				81E7E6721FE0461200F4CFA3 /* models */,
 				81E7E6411FE02C3E00F4CFA3 /* Main.storyboard */,
-				81E7E6441FE02C3E00F4CFA3 /* Assets.xcassets */,
-				81E7E6461FE02C3E00F4CFA3 /* LaunchScreen.storyboard */,
 				81E7E6491FE02C3E00F4CFA3 /* Info.plist */,
 			);
 			path = "DSA NSKeyedArchiver";
@@ -123,6 +128,34 @@
 				81E7E65F1FE02C3E00F4CFA3 /* Info.plist */,
 			);
 			path = "DSA NSKeyedArchiverUITests";
+			sourceTree = "<group>";
+		};
+		81E7E6711FE045F500F4CFA3 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				81E7E63F1FE02C3E00F4CFA3 /* DSAListViewController.swift */,
+				81E7E66B1FE0302400F4CFA3 /* EditListViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		81E7E6721FE0461200F4CFA3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				81E7E66D1FE036F800F4CFA3 /* DSA.swift */,
+				81E7E66F1FE03CD600F4CFA3 /* DataModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		81E7E6731FE0462400F4CFA3 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				81E7E63D1FE02C3E00F4CFA3 /* AppDelegate.swift */,
+				81E7E6441FE02C3E00F4CFA3 /* Assets.xcassets */,
+				81E7E6461FE02C3E00F4CFA3 /* LaunchScreen.storyboard */,
+			);
+			path = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E7E6401FE02C3E00F4CFA3 /* ViewController.swift in Sources */,
+				81E7E6701FE03CD600F4CFA3 /* DataModel.swift in Sources */,
+				81E7E66E1FE036F800F4CFA3 /* DSA.swift in Sources */,
+				81E7E6401FE02C3E00F4CFA3 /* DSAListViewController.swift in Sources */,
+				81E7E66C1FE0302400F4CFA3 /* EditListViewController.swift in Sources */,
 				81E7E63E1FE02C3E00F4CFA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
